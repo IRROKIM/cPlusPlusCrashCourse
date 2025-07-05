@@ -19,6 +19,8 @@ int step_function(int x){
 }
 
 int main() {
+
+    //1차_함수의 기능
     int num1 = 42;
     int result1 = step_function(num1);
 
@@ -31,6 +33,11 @@ int main() {
     printf("Num1: %d, Step: %d\n", num1, result1);
     printf("Num2: %d, Step: %d\n", num2, result2);
     printf("Num3: %d, Step: %d\n", num3, result3);
+
+    //2차_배열의 원소구하기
+    short array[] = {104, 105, 32, 98, 105, 108, 108, 0};
+    size_t n_elements = sizeof(array) / sizeof(short);
+    printf("Array size: %zu\n", n_elements);
 
     return 0;
 }
